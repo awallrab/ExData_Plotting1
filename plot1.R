@@ -9,10 +9,10 @@ data$Date <- as.Date(data$Date, format="%d/%m/%Y")
 # only date 2007-02-01 and 2007-02-02
 data <- subset(data, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
 
-## draw histogram
+# create plot
 hist(data$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency", col="red")
 
-## create "plot1.png"
+# write "plot1.png"
 dev.copy(png,file="plot1.png",width=480,height=480)
 dev.off()
 
