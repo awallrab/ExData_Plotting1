@@ -1,5 +1,5 @@
 ## plot3.R
-# 
+
 # change to working directory
 old_wd <- getwd()
 setwd("/talend/R/04_Exploratory/Assignment1")
@@ -21,7 +21,7 @@ points(data$Sub_metering_2~data$Datetime, type="l", col="red")
 points(data$Sub_metering_3~data$Datetime, type="l", col="blue")
 
 ## draw additional legend top right
-legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lty=1)
+legend("topright", legend=c("Sub_metering_1 ", "Sub_metering_2 ", "Sub_metering_3 "), col=c("black", "red", "blue"), lty=1, cex=.75)
 
 # save "plot3.png"
 dev.copy(png, file="plot3.png", height=480, width=480)

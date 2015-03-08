@@ -17,7 +17,7 @@ data$Datetime <- as.POSIXct(datetime)
 
 # create plot
 # set graph parameters
-par(mfrow=c(2, 2), mar=c(4, 4, 2, 2))
+par(mfrow=c(2, 2), mar=c(4, 4, 4, 2))
 
 # global active power
 plot(data$Global_active_power~data$Datetime, type="l", xlab="", ylab="Global Active Power")
