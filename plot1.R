@@ -1,3 +1,5 @@
+## plot1.R
+
 # change to working directory
 old_wd <- getwd()
 setwd("/talend/R/04_Exploratory/Assignment1")
@@ -13,7 +15,7 @@ data <- subset(data, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
 hist(data$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency", col="red")
 
 # write "plot1.png"
-dev.copy(png,file="plot1.png",width=480,height=480)
+dev.copy(png, file="plot1.png", width=480, height=480)
 dev.off()
 
 # get back to original directory
